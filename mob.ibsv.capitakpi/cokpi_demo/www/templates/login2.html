@@ -1,0 +1,45 @@
+<ion-view view-title="Login">
+  <ion-content>
+    <h2 align="center">MY KPI</h2>
+    <!--<form ng-submit="doLogin()">-->
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Company ID</span>
+          <input type="text" ng-model="loginData.company">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">E-mail</span>
+          <input type="text" ng-model="loginData.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="loginData.password">
+        </label> 
+        <div class="row">
+          <div class="col col-75">
+            <select ng-model="selectedItem" ng-options="item as item.name for item in items" ng-change="onClickBos(selectedItem)"></select>
+          <!--    <select name="bos" data-engine-model="param_bos">
+                <option value="co">CO</option>
+                <option value ="bos" selected>Manager</option>
+              </select>
+            -->
+          </div>
+          <div class="col">     
+                Remember
+              <label class="toggle toggle-calm">
+                 <input type="checkbox">
+                 <div class="track">
+                   <div class="handle"></div>
+                 </div>
+              </label>
+          </div>
+        </div>
+        <label class="item">
+            <button class="button button-block button-calm" type="submit" ng-click="onClickLogin()">Log in</button>
+        </label>
+        Contact support<br>
+        Tel: +100-123-9999<br>
+        Mail: support-kpi@inte.co.jp
+      </div>
+  </ion-content>
+</ion-view>

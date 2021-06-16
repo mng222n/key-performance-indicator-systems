@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `capitakpi`.`employee`;
+CREATE TABLE  `capitakpi`.`employee` (
+  `EMPLOYEE_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `NAME` varchar(45) NOT NULL,
+  `DIVISION` varchar(255) NOT NULL,
+  `START_DATE` datetime NOT NULL,
+  PRIMARY KEY (`EMPLOYEE_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;

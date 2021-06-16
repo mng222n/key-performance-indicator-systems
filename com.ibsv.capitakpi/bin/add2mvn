@@ -1,0 +1,4 @@
+set PATH=%PATH%;E:\Tools\apache-maven-3.2.3\bin
+#mvn install:install-file -Dfile=g:\struts2-fullhibernatecore-plugin-2.2.2-GA.jar -DgroupId=com.google.code -DartifactId=struts2-fullhibernatecore-plugin -Dversion=2.2.2 -Dpackaging=jar
+mvn install:install-file -Dfile=g:\jta-1.0.1B.jar -DgroupId=javax.transaction -DartifactId=jta -Dversion=1.0.1B -Dpackaging=jar
+pause
